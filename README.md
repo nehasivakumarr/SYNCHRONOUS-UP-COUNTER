@@ -27,20 +27,77 @@ The next flip-flop need only “recognize” that the first flip-flop’s Q outp
 However, the remaining flip-flops should be made ready to toggle only when all lower-order output bits are “high,” thus the need for AND gates.
 
 **Procedure**
+1. Type the program in Quartus software.
+2. Compile and run the program.
+3. Generate the RTL schematic and save the logic diagram.
+4. Create nodes for inputs and outputs to generate the timing diagram.
+5. For different input combinations generate the timing diagram.
 
-/* write all the steps invloved */
 
 **PROGRAM**
 
-/* Program for flipflops and verify its truth table in quartus using Verilog programming. 
+```
+UP COUNTER
 
-Developed by: RegisterNumber:
-*/
+module upcounter(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else 
+     out <= out+1;
+end
+endmodule
+
+DOWN COUNTER
+
+module downcounter(out,clk,rst);
+input clk,rst;
+output reg [3:0]out;
+always @ (posedge clk)
+begin
+   if(rst)
+     out<=0;
+   else 
+     out <= out-1;
+end
+endmodule
+
+
+```
 
 **RTL LOGIC UP COUNTER**
+```
+UP COUNTER
+
+<img width="1920" height="1080" alt="Screenshot (99)" src="https://github.com/user-attachments/assets/a6ddbf80-9522-4c7c-8350-5605b89e363a" />
+
+DOWN COUNTER
+<img width="1920" height="1080" alt="Screenshot (101)" src="https://github.com/user-attachments/assets/8440f8e5-4c31-40ca-a494-5d8bb09a3ce5" />
+
+
+```
+
 
 **TIMING DIAGRAM FOR IP COUNTER**
+```
+UP COUNTER
+<img width="1920" height="1080" alt="Screenshot (100)" src="https://github.com/user-attachments/assets/59c4f3b6-4797-47f9-a509-063eae532957" />
+
+DOWNCOUNTER
+
+<img width="1920" height="1080" alt="Screenshot (102)" src="https://github.com/user-attachments/assets/95c78da3-2d50-47aa-8f84-cef5cf2ee192" />
+
+
+```
+
 
 **TRUTH TABLE**
+<img width="1920" height="1080" alt="Screenshot (99)" src="https://github.com/user-attachments/assets/13d2b7d4-f463-4bc2-86a0-78804fcdf384" />
+
 
 **RESULTS**
+Thus a 4 bit synchronous up counter and dwoncounter is implelmented and its functionality is validated.
+
