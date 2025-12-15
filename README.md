@@ -35,7 +35,6 @@ However, the remaining flip-flops should be made ready to toggle only when all l
 
 
 **PROGRAM**
-
 ```
 UP COUNTER
 
@@ -69,20 +68,20 @@ endmodule
 ```
 
 **RTL LOGIC UP COUNTER**
-```
+
 UP COUNTER
 
 <img width="1920" height="1080" alt="Screenshot (99)" src="https://github.com/user-attachments/assets/a6ddbf80-9522-4c7c-8350-5605b89e363a" />
 
 DOWN COUNTER
+
 <img width="1920" height="1080" alt="Screenshot (101)" src="https://github.com/user-attachments/assets/8440f8e5-4c31-40ca-a494-5d8bb09a3ce5" />
 
 
-```
 
 
 **TIMING DIAGRAM FOR IP COUNTER**
-```
+
 UP COUNTER
 <img width="1920" height="1080" alt="Screenshot (100)" src="https://github.com/user-attachments/assets/59c4f3b6-4797-47f9-a509-063eae532957" />
 
@@ -91,7 +90,7 @@ DOWNCOUNTER
 <img width="1920" height="1080" alt="Screenshot (102)" src="https://github.com/user-attachments/assets/95c78da3-2d50-47aa-8f84-cef5cf2ee192" />
 
 
-```
+
 
 
 **TRUTH TABLE**
