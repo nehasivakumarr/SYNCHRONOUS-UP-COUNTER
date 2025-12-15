@@ -95,9 +95,12 @@ DOWNCOUNTER
 
 
 **TRUTH TABLE**
-<img width="1920" height="1080" alt="Screenshot (99)" src="https://github.com/user-attachments/assets/13d2b7d4-f463-4bc2-86a0-78804fcdf384" />
+
+![tt](https://github.com/user-attachments/assets/40f6867e-e0c4-483f-b8b7-314fd0bfaadd)
+
 
 
 **RESULTS**
+
 Thus a 4 bit synchronous up counter and dwoncounter is implelmented and its functionality is validated.
 
